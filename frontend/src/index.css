@@ -1,0 +1,57 @@
+:root {
+  --bg: #eef2ec;
+  --surface: #ffffff;
+  --ink: #1b2a22;
+  --ink-soft: #4a5d51;
+  --primary: #1f4b3f;
+  --primary-light: #2f6853;
+  --accent: #b98a3e;
+  --border: #d9e0d6;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Work Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.serif {
+  font-family: 'Amiri', Georgia, serif;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

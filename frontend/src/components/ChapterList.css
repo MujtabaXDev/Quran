@@ -1,0 +1,45 @@
+.chapter-list-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.chapter-tile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.chapter-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 24px 12px;
+  text-decoration: none;
+  color: var(--ink);
+  min-height: 100px;
+}
+
+.chapter-link.disabled {
+  color: var(--ink-soft);
+  cursor: not-allowed;
+}
+
+.chapter-title {
+  font-size: 1.1rem;
+}
+
+.chapter-status {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
